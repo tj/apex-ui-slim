@@ -4,9 +4,39 @@
 
 // Used to color git status
 
-.status          { color: @text-color; }
-.status-added    { color: @text-color-success; } // green
-.status-ignored  { color: @text-color-subtle; }  // faded
-.status-modified { color: @text-color-warning; } // orange
-.status-removed  { color: @text-color-error; }   // red
-.status-renamed  { color: @text-color-info; }    // blue
+.status {
+  > .header > .name,
+  > .name {
+    color: @text-color;
+  }
+}
+.status-added {
+  > .header > .name,
+  > .name {
+    color: @text-color-success; // green
+  }
+}
+.status-ignored {
+  > .header > .name,
+  > .name {
+    color: @text-color-subtle; // faded
+  }
+}
+.status-modified {
+  > .header > .name,
+  > .name {
+    color: @text-color-warning; // orange
+  }
+}
+.status-removed {
+  > .header > .name,
+  > .name {
+    color: @text-color-error; // red
+  }
+}
+.status-renamed {
+  > .header > .name,
+  > .name {
+    color: @text-color-info; // blue
+  }
+}
